@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juego piedra, papel o tijera. Gane al algoritmo aleatorio y sume un punto.">
+    <meta name="keywords" content="juego, piedra, papel, tijera, suerte, aleatorio">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <title>Juego</title>
+</head>
+
+<body>
+    <header>
+        <h1>PIEDRA, PAPEL O TIJERA</h1>
+        <div id="restart">
+            <h2>Resetear</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="seguimiento">
+            <ul>
+                <li>PIEDRA</li>
+                <li>PAPEL</li>
+                <li>TIJERA</li>
+            </ul>
+            
+            <div class="puntos">
+                <h3>Puntos</h3>
+                <p id="puntos">0</p>
+            </div>
+        </div>
+
+        <div class="personajes">
+            <img class="rock" src="./images/rock.png" onclick="userChoice('piedra')">
+            <img class="scissor" src="./images/scissor.png" onclick="userChoice('tijera')">
+            <img class="paper" src="./images/paper.png" onclick="userChoice('papel')">
+        </div>
+
+        <div class="aleatorio">
+            <h2>Opción elegida</h2>
+            <p id="opcionElegida">...</p>
+        </div>
+
+    </main>
+
+    <footer></footer>
+
+    <script src="./javascript.js"></script>
+</body>
+
+</html>

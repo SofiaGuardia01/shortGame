@@ -1,0 +1,118 @@
+body {
+    background-color: #2b1084;
+}
+
+h1 {
+    color: aliceblue;
+    padding-left: 5%;
+}
+
+#restart {
+    background-color: rgb(255, 39, 39);
+    border: 2px solid;
+    border-color: rgb(90, 41, 41);
+    padding: 0px 5px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* contenedor se ajusta al contenido */
+    display: inline-block;
+}
+
+#restart:hover {
+    background-color: #40f72c;
+}
+
+#restart h2 {
+    color:rgb(90, 41, 41);
+    margin: 0px;
+}
+
+.seguimiento, .aleatorio {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid;
+    padding: 5px 30px 5px 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.seguimiento {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    margin: 25px 0px;
+    padding-left: 20px;
+}
+
+ul li {
+    list-style: none;
+    font-weight: bold;
+    padding: 3px;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+.puntos p {
+    font-size: larger;
+    text-align: center;
+}
+
+.personajes {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.rock {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.scissor {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.paper {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+
+
+@media (max-width:800px) {
+    img {
+        width: 90%;
+    }
+
+    .seguimiento {
+        margin-left: 50%;
+        margin-right: 40px;
+    }
+
+    .personajes {
+        padding: 20px;
+    }
+
+}
+
+@media (min-width:800px) {
+    img {
+        width: 200px;
+    }
+
+    .seguimiento {
+        margin-left: 70%;
+        margin-right: 50px;
+    }
+
+    .personajes {
+        padding: 20px 30%;
+    }
+}
